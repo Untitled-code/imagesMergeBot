@@ -9,6 +9,7 @@ import datetime
 import logging
 import multipleLines
 import imageMerger
+import os
 logging.basicConfig(filename='addTextPic_bot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 API_TOKEN = os.environ.get('MERGEIMAGES')
