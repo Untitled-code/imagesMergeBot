@@ -1,8 +1,5 @@
 from PIL import Image
 
-import numpy as np
-import matplotlib.pyplot as plt
-
 def measureImage(image):
     width, height = image.size #measure size
     print(f"Background image is: Width:{width} and height:{height}")

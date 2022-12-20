@@ -1,4 +1,3 @@
-#!././EnvPy/bStf-env/bin/bin/python
 # -*- coding: utf-8 -*-
 """
 telegram bot for register_next_step handler.
@@ -12,7 +11,7 @@ import multipleLines
 import imageMerger
 logging.basicConfig(filename='addTextPic_bot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-API_TOKEN = '5742341335:AAHFew3NamgduXKc50oFdiKB0YcevYmmtyY'
+API_TOKEN = os.environ.get('MERGEIMAGES')
 
 bot = telebot.TeleBot(API_TOKEN)
 
